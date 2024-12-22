@@ -108,12 +108,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == "помощь":  # Обработка нажатия на кнопку "Помощь"
         await help_command(update, context)
 
-    elif "пасхалко" in text:  # Если в тексте есть слово "пасхалка"
-        # Отправляем картинку
+    elif "пасхалко" in text: 
         await update.message.reply_photo(r"C:\Users\Администратоp\Pictures\photo.jpg")
 
-    elif "почему" in text:  # Если в тексте есть слово "почему"
-        # Отправляем стикер
+    elif "почему" in text: 
         await update.message.reply_sticker("CAACAgIAAxkBAAELGFpnZynBO_KQoMTWP3LSOqSJ8YBT8wACt2MAAmEEOUviHR61N3ecUDYE")
 
     else:
